@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sign In form</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        /* Assign full width inputs */
+        input[type=text],
+        input[type=password]{
+            width: 100%;
+            padding: 12px 40px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for the buttons */
+        button{
+            background-color: #4c50af;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Set a hover effect for the button */
+        button:hover{
+            opacity: 0.8;
+        }
+
+        /* Set extra style for the cancel button */
+        .container{
+            padding: 80px;
+        }
+        .fontuser{
+            position: relative;
+        }
+        .fontuser i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: darkmagenta;
+        }
+        .fontpassword{
+            position: relative;
+        }
+        .fontpassword i{
+            position: absolute;
+            left: 15px;
+            top: 50px;
+            color: darkmagenta; 
+        }
+
+    </style>
+</head>
+<body>
+    
+      <div class="container">
+          <div class="fontuser">
+              <label><b>Username</b></label>
+              <input type="text" placeholder="Enter Your Username" name="uname" required>
+              <i class="fa fa-user fa-lg"></i>
+          </div>
+
+          <div>
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Your Password" name="pws" required>
+              <i class="fa fa-key fa-lg"></i>
+          </div>
+
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked">
+                Remember me
+
+      </div>
+
+</body>
+</html>
